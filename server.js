@@ -13,7 +13,7 @@ var db=admin.database();
 var userRef=db.ref("Orders");
 const app = express();
 
-app.listen(3000,function (){
+app.listen(process.env.PORT || 3000,function (){
   console.log('server is up')
   //addUser({"name":"TAXI"})
 })
